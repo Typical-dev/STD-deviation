@@ -1,8 +1,8 @@
 import csv
-with open("class1.csv", newline = "") as f:
+with open("data.csv", newline = "") as f:
     reader = csv.reader(f)
     file_data = list(reader)
-data = file_data.pop(0)
+data = file_data[0]
 
 def mean(data1):
     total_marks = 0
